@@ -30,18 +30,16 @@ async function getData(event){
             let ithBreweryType = res[i].brewery_type
             let ithphoneNumber = res[i].phone
             let ithStreet = res[i].street
-            // let ithWebsite = res[i].website_url
             let ithArrayItem = "<div class='new-container'>" + "<p>"  + ithBreweryName + "<p>" + "<h5>"  
             + "type: " + ithBreweryType + "<p>"
             + " phone number: " + ithphoneNumber  +"<p>" + "street address: " + ithStreet + 
             "<p>" +"</div>"
-            // + "<p>" + "website: " + ithWebsite 
             breweriesList = breweriesList + ithArrayItem
-        }
+        } 
 
             document.getElementById('breweries').innerHTML = breweriesList
 
-    } )
+    } ) 
     .catch (err=>{
         console.log("error!", err)
     })
