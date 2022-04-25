@@ -82,7 +82,7 @@ body {
 .menu-button > span::before,
 .menu-button > span::after 
 {
-    background-color: peru;
+    background-color: burlywood;
     transition-duration: .10s;
     position: absolute;
     width: 100%;

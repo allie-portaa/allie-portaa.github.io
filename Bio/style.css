@@ -1,0 +1,104 @@
+#header {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(219,112,147,.3);
+    color: 	#D0C0C0;
+    padding: 10px;
+}
+
+
+#name {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-family: helvetica;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px){
+  #header {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+h2 {
+    padding: 10px;
+    font-size: 18px;
+    font-family: Helvetica; 
+}
+
+a {
+    text-decoration: none;
+    color: 	#D0C0C0;
+}
+
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Dusk_Sunset_Sky.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    overflow-y:auto;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+
+#About-Me {
+    text-align: center;
+    color: 	black;
+    font-family: Helvetica; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 800px){
+    #about-me {
+        flex-direction: column;
+        padding: 10px;
+        color: #D0C0C0;
+    }
+}
+
+
+h3 {
+    font-size: 28px;
+}
+
+img{
+    width: 80%;
+    padding: 50px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+
+#photo {
+    display: flex;
+    overflow:hidden;
+    padding: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}

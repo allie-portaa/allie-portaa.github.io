@@ -30,11 +30,12 @@ async function getData(event){
             let ithBreweryType = res[i].brewery_type
             let ithphoneNumber = res[i].phone
             let ithStreet = res[i].street
-            let ithWebsite = res[i].website_url
+            // let ithWebsite = res[i].website_url
             let ithArrayItem = "<div class='new-container'>" + "<p>"  + ithBreweryName + "<p>" + "<h5>"  
             + "type: " + ithBreweryType + "<p>"
             + " phone number: " + ithphoneNumber  +"<p>" + "street address: " + ithStreet + 
-            "<p>" + "<p>" + "website: " + ithWebsite +"</div>"
+            "<p>" +"</div>"
+            // + "<p>" + "website: " + ithWebsite 
             breweriesList = breweriesList + ithArrayItem
         }
 
@@ -49,3 +50,11 @@ async function getData(event){
 
 button.addEventListener('click', getData)
 
+
+function emailMe (){
+    alert("Please email me at allie.porter92@gmail.com or call me at (301)-943-9591")
+}
+
+const contact = document.getElementById("contact")
+
+contact.addEventListener('click', emailMe) 
